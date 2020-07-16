@@ -44,7 +44,11 @@ describe("enhancers module", () => {
   });
   describe("failure function", () => {
     it("decreases the item's durability by 5 if the enhancement is less than 15", () => {
-      const expectedOutput = { name: "sword", durability: 95, enhancement: 14 };
+      const expectedOutput = {
+        name: "sword",
+        durability: 95,
+        enhancement: 14,
+      };
       const actualOutput = enhancer.fail({
         name: "sword",
         durability: 100,
@@ -53,7 +57,11 @@ describe("enhancers module", () => {
       expect(actualOutput).toMatchObject(expectedOutput);
     });
     it("decreases the item's durability by 10 if the enhancement is 15 or more", () => {
-      const expectedOutput = { name: "sword", durability: 90, enhancement: 15 };
+      const expectedOutput = {
+        name: "sword",
+        durability: 90,
+        enhancement: 15,
+      };
       const actualOutput = enhancer.fail({
         name: "sword",
         durability: 100,
@@ -62,7 +70,11 @@ describe("enhancers module", () => {
       expect(actualOutput).toMatchObject(expectedOutput);
     });
     it("decreases the item's enhancement by 1 if the enhancement is 17 or greater", () => {
-      const expectedOutput = { name: "sword", durability: 90, enhancement: 16 };
+      const expectedOutput = {
+        name: "sword",
+        durability: 90,
+        enhancement: 16,
+      };
       const actualOutput = enhancer.fail({
         name: "sword",
         durability: 100,
