@@ -1,0 +1,23 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "description": "Unit Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuvallo/webtesting-i-challenge.git"
+  },
+  "author": "Tyler Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuvallo/webtesting-i-challenge/issues"
+  },
+  "homepage": "https://github.com/nuvallo/webtesting-i-challenge#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
